@@ -98,30 +98,50 @@ void loop() {
   {
     response = "WiFi Connected: " + ip_address;
   }
-  if(req.indexOf("forward") != -1)
-  {
-    response = "Moving Forward";
-    Serial2.write(0x01);
-  }
-  if(req.indexOf("back") != -1)
-  {
-    response = "Moving Backward";
-    Serial2.write(0x03);
-  }
-  if(req.indexOf("right") != -1)
-  {
-    response = "Turning Right";
-    Serial2.write(0x02);
-  }
-  if(req.indexOf("left") != -1)
-  {
-    response = "Turning Left";
-    Serial2.write(0x04);
-  }
-  if(req.indexOf("stop") != -1)
+  if(req.indexOf("OO") != -1)
   {
     response = "Stopping";
-    Serial2.write(0x05);
+    Serial2.write(0);
+  }
+  if(req.indexOf("FO") != -1)
+  {
+    response = "Moving Forward";
+    Serial2.write(1);
+  }
+  if(req.indexOf("BO") != -1)
+  {
+    response = "Moving Backward";
+    Serial2.write(2);
+  }
+  if(req.indexOf("OL") != -1)
+  {
+    response = "Turning Left";
+    Serial2.write(3);
+  }
+  if(req.indexOf("OR") != -1)
+  {
+    response = "Turning Right";
+    Serial2.write(4);
+  }
+  if(req.indexOf("FL") != -1)
+  {
+    response = "Forward Left";
+    Serial2.write(5);
+  }
+  if(req.indexOf("FR") != -1)
+  {
+    response = "Forward Right";
+    Serial2.write(6);
+  }
+  if(req.indexOf("BL") != -1)
+  {
+    response = "Back Left";
+    Serial2.write(7);
+  }
+  if(req.indexOf("BR") != -1)
+  {
+    response = "Back Right";
+    Serial2.write(8);
   }
 
   client.println("HTTP/1.1 200 OK");
