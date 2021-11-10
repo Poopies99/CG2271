@@ -97,6 +97,7 @@ void loop() {
   if(req.indexOf("status") != -1)
   {
     response = "WiFi Connected: " + ip_address;
+    Serial2.write(9);
   }
   if(req.indexOf("OO") != -1)
   {
@@ -142,6 +143,16 @@ void loop() {
   {
     response = "Back Right";
     Serial2.write(8);
+  }
+  if(req.indexOf("end") != -1)
+  {
+    response = "Ended";
+    Serial2.write(10);
+  }
+  if(req.indexOf("auto") != -1)
+  {
+    response = "Self-Drive Mode";
+    Serial2.write(11);
   }
 
   client.println("HTTP/1.1 200 OK");
