@@ -10,4 +10,4 @@ All Lab materials and submissions can be found [here](https://github.com/Poopies
 
 All Project related folders can be found [here](https://github.com/Poopies99/CG2271/tree/master/Project)
 
-To View summary video of Project click [here](https://youtu.be/IjagZ_chxD4)
+To view summary video of Project click [here](https://youtu.be/IjagZ_chxD4)
