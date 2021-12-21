@@ -4,7 +4,7 @@ This repository contains the codes for all materials for CG2271 taken in AY21/22
 
 ## Lab
 
-All lab materials and submissions can be found here
+All Lab materials and submissions can be found here
 
 ## Project
 
